@@ -13,23 +13,47 @@ and open the template in the editor.
     <body>
         <div>TODO write content</div><div>Tralala</div>
         <span>hm 123</span><span>ramtamtam</span>
-        <p>to jest zaba
-        <img src="img/zaba.jpg" width=200 height=400 hspace="5" vspace="10" align="left" alt="Zdjecie zaby"/>
-        zielona</p>
-        <table border="1" cellpadding="2" cellspacing="5"/>
+        <p>to jest zabazielona</p>
+        <img src="img/zaba.jpg" width=300 height=300 hspace="5" vspace="10" align="left" alt="Zdjecie zaby" usemap="#mapa_obrazka"/>
+        <map name="mapa_obrazka">
+            <area shape="rect" coords="0,0,150,300" href="http://wp.pl" alt="WPlink"/>
+            <area shape="rect" coords="150,0,300,300" href="http://onet.pl" alt="ONETlink"/>
+        </map>
+        <!-----TABELA----->
+        <table border="10" cellpadding="10" cellspacing="5"/>
             <thead>
             <tr>
                 <th>kolumna1</th><th>kolumna2</th><th>kolumna3</th>
             </tr>
                 
             </thead>
-      
-           
-                
             <tbody>
-                <tr><td>jeden</td><td>dwa</td><td>trzy</td></tr>
-                <tr><td>jeden</td><td>dwa</td><td>trzy</td></tr>
+                <tr><td rowspan="2" valign="top" align="center">jeden</td><td colspan="2" align="center">dwa</td></tr>
+                <tr align="right"><td>dwa</td><td>trzy</td></tr>
             </tbody>
-        
+            
+            <!----FORMULARZ---->
+        <form action="" id="form1" method="get">
+            <label for="txt">login</label>
+                   <input type="text" name="imie" value="Gabriela" maxlength="4" disabled="disabled" id="txt"/><br>
+            <label for="haslo">hasło</label>
+                       <input type="password" name="haslo" value="gabi" id="haslo"><br>
+            <label for="ptaszek">zapisz</label>
+                <input type="checkbox" name="box" id="ptaszek"><br>
+            <label for="K">K</label>
+                 <input type="radio" name="dot" id="K"><br>
+            <label for="M">M</label>
+                 <input type="radio" name="dot" id="M">
+            <input type="reset" name="reset">
+            <input type="file" name="pliki">
+            <input type="hidden" name="ukryty">
+            <input type="image" name="obraz">
+            <input type="button" name="przycisk" value="przycisk">
+            
+            
+            
+            <input type="submit" value="wyślij"/>
+        </form>
+            
     </body>
 </html>
