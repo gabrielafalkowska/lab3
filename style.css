@@ -1,0 +1,18 @@
+p{font-size: 20px;}
+.paragraf{font-size: 2px;}
+#para1{font-size: 30px;}
+div p{color: black;}
+div>p{color: black;}
+p+p{color: black;}
+P~P{color: black;}
+p[style]{color:red;}
+a[target="_blanc"]{color:black;}
+p[class~="p1"]{color:blue}
+p[class|="p1"]{color:yellow;}
+p[class^="p"]
+p[class$="2"]
+p[class*="gr"]
+p:first-child{font-size: 70px;}
+a:hover{color:red;} /*podswietla link*/
+p:empty /*wyapie puste paragrafy*/
+p:nth-child(2) /*stylowanie co ktorys paragraf n-podajemy*/
